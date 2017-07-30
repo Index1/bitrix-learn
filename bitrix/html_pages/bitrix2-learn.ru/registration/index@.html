@@ -1,0 +1,416 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">.bx-composite-btn {background: url(/bitrix/images/main/composite/sprite-1x.png) no-repeat right 0 #e94524;border-radius: 15px;color: #ffffff !important;display: inline-block;line-height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;font-size: 12px !important;font-weight: bold !important;height: 31px !important;padding: 0 42px 0 17px !important;vertical-align: middle !important;text-decoration: none !important;}@media screen   and (min-device-width: 1200px)   and (max-device-width: 1600px)   and (-webkit-min-device-pixel-ratio: 2)  and (min-resolution: 192dpi) {.bx-composite-btn {background-image: url(/bitrix/images/main/composite/sprite-2x.png);background-size: 42px 124px;}}.bx-composite-btn-fixed {position: absolute;top: -45px;right: 15px;z-index: 10;}.bx-btn-white {background-position: right 0;color: #fff !important;}.bx-btn-black {background-position: right -31px;color: #000 !important;}.bx-btn-red {background-position: right -62px;color: #555 !important;}.bx-btn-grey {background-position: right -93px;color: #657b89 !important;}.bx-btn-border {border: 1px solid #d4d4d4;height: 29px !important;line-height: 29px !important;}.bx-composite-loading {display: block;width: 40px;height: 40px;background: url(/bitrix/images/main/composite/loading.gif);}</style>
+<script type="text/javascript" data-skip-moving="true">(function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','banner':{'url':'http://www.1c-bitrix.ru/composite/','text':'Быстро с 1С-Битрикс','bgcolor':'#E94524','style':'white'},'storageBlocks':[],'dynamicBlocks':{'Lk7Vbr':{'hash':'e8a3c300b7e51a4d10f429ce3295a4e2'},'CKtZPX':{'hash':'644799dbd4fe51672d387a4a4d7e4e16'}},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'120'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}else{w.frameRequestFail = f;}return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();})(window, document);</script>
+
+
+<link href="/bitrix/cache/css/s1/jobs_ui/kernel_main/kernel_main.css?150118235631472" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/jobs_ui/page_edf89947f4eab4a27210f6c247861fb3/page_edf89947f4eab4a27210f6c247861fb3.css?1501193871764" type="text/css"  rel="stylesheet" />
+<link href="/bitrix/cache/css/s1/jobs_ui/template_e6aa65c5e6cced4a125a643602b2cf55/template_e6aa65c5e6cced4a125a643602b2cf55.css?15011822642737" type="text/css"  data-template-style="true"  rel="stylesheet" />
+<script type="text/javascript">if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess=='object') for(var i in mess) BX.message[i]=mess[i]; return true;};</script>
+<script type="text/javascript">(window.BX||top.BX).message({'JS_CORE_LOADING':'Загрузка...','JS_CORE_NO_DATA':'- Нет данных -','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить','JS_CORE_WINDOW_CONTINUE':'Продолжить','JS_CORE_H':'ч','JS_CORE_M':'м','JS_CORE_S':'с','JSADM_AI_HIDE_EXTRA':'Скрыть лишние','JSADM_AI_ALL_NOTIF':'Показать все','JSADM_AUTH_REQ':'Требуется авторизация!','JS_CORE_WINDOW_AUTH':'Войти','JS_CORE_IMAGE_FULL':'Полный размер'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'WEEK_START':'1'});(window.BX||top.BX).message({'MONTH_1':'Январь','MONTH_2':'Февраль','MONTH_3':'Март','MONTH_4':'Апрель','MONTH_5':'Май','MONTH_6':'Июнь','MONTH_7':'Июль','MONTH_8':'Август','MONTH_9':'Сентябрь','MONTH_10':'Октябрь','MONTH_11':'Ноябрь','MONTH_12':'Декабрь','MONTH_1_S':'Января','MONTH_2_S':'Февраля','MONTH_3_S':'Марта','MONTH_4_S':'Апреля','MONTH_5_S':'Мая','MONTH_6_S':'Июня','MONTH_7_S':'Июля','MONTH_8_S':'Августа','MONTH_9_S':'Сентября','MONTH_10_S':'Октября','MONTH_11_S':'Ноября','MONTH_12_S':'Декабря','MON_1':'Янв','MON_2':'Фев','MON_3':'Мар','MON_4':'Апр','MON_5':'Май','MON_6':'Июн','MON_7':'Июл','MON_8':'Авг','MON_9':'Сен','MON_10':'Окт','MON_11':'Ноя','MON_12':'Дек','DAY_OF_WEEK_0':'Воскресенье','DAY_OF_WEEK_1':'Понедельник','DAY_OF_WEEK_2':'Вторник','DAY_OF_WEEK_3':'Среда','DAY_OF_WEEK_4':'Четверг','DAY_OF_WEEK_5':'Пятница','DAY_OF_WEEK_6':'Суббота','DOW_0':'Вс','DOW_1':'Пн','DOW_2':'Вт','DOW_3':'Ср','DOW_4':'Чт','DOW_5':'Пт','DOW_6':'Сб','FD_SECOND_AGO_0':'#VALUE# секунд назад','FD_SECOND_AGO_1':'#VALUE# секунду назад','FD_SECOND_AGO_10_20':'#VALUE# секунд назад','FD_SECOND_AGO_MOD_1':'#VALUE# секунду назад','FD_SECOND_AGO_MOD_2_4':'#VALUE# секунды назад','FD_SECOND_AGO_MOD_OTHER':'#VALUE# секунд назад','FD_SECOND_DIFF_0':'#VALUE# секунд','FD_SECOND_DIFF_1':'#VALUE# секунда','FD_SECOND_DIFF_10_20':'#VALUE# секунд','FD_SECOND_DIFF_MOD_1':'#VALUE# секунда','FD_SECOND_DIFF_MOD_2_4':'#VALUE# секунды','FD_SECOND_DIFF_MOD_OTHER':'#VALUE# секунд','FD_MINUTE_AGO_0':'#VALUE# минут назад','FD_MINUTE_AGO_1':'#VALUE# минуту назад','FD_MINUTE_AGO_10_20':'#VALUE# минут назад','FD_MINUTE_AGO_MOD_1':'#VALUE# минуту назад','FD_MINUTE_AGO_MOD_2_4':'#VALUE# минуты назад','FD_MINUTE_AGO_MOD_OTHER':'#VALUE# минут назад','FD_MINUTE_DIFF_0':'#VALUE# минут','FD_MINUTE_DIFF_1':'#VALUE# минута','FD_MINUTE_DIFF_10_20':'#VALUE# минут','FD_MINUTE_DIFF_MOD_1':'#VALUE# минута','FD_MINUTE_DIFF_MOD_2_4':'#VALUE# минуты','FD_MINUTE_DIFF_MOD_OTHER':'#VALUE# минут','FD_MINUTE_0':'#VALUE# минут','FD_MINUTE_1':'#VALUE# минуту','FD_MINUTE_10_20':'#VALUE# минут','FD_MINUTE_MOD_1':'#VALUE# минуту','FD_MINUTE_MOD_2_4':'#VALUE# минуты','FD_MINUTE_MOD_OTHER':'#VALUE# минут','FD_HOUR_AGO_0':'#VALUE# часов назад','FD_HOUR_AGO_1':'#VALUE# час назад','FD_HOUR_AGO_10_20':'#VALUE# часов назад','FD_HOUR_AGO_MOD_1':'#VALUE# час назад','FD_HOUR_AGO_MOD_2_4':'#VALUE# часа назад','FD_HOUR_AGO_MOD_OTHER':'#VALUE# часов назад','FD_HOUR_DIFF_0':'#VALUE# часов','FD_HOUR_DIFF_1':'#VALUE# час','FD_HOUR_DIFF_10_20':'#VALUE# часов','FD_HOUR_DIFF_MOD_1':'#VALUE# час','FD_HOUR_DIFF_MOD_2_4':'#VALUE# часа','FD_HOUR_DIFF_MOD_OTHER':'#VALUE# часов','FD_YESTERDAY':'вчера','FD_TODAY':'сегодня','FD_TOMORROW':'завтра','FD_DAY_AGO_0':'#VALUE# суток назад','FD_DAY_AGO_1':'#VALUE# сутки назад','FD_DAY_AGO_10_20':'#VALUE# суток назад','FD_DAY_AGO_MOD_1':'#VALUE# сутки назад','FD_DAY_AGO_MOD_2_4':'#VALUE# суток назад','FD_DAY_AGO_MOD_OTHER':'#VALUE# суток назад','FD_DAY_DIFF_0':'#VALUE# дней','FD_DAY_DIFF_1':'#VALUE# день','FD_DAY_DIFF_10_20':'#VALUE# дней','FD_DAY_DIFF_MOD_1':'#VALUE# день','FD_DAY_DIFF_MOD_2_4':'#VALUE# дня','FD_DAY_DIFF_MOD_OTHER':'#VALUE# дней','FD_DAY_AT_TIME':'#DAY# в #TIME#','FD_MONTH_AGO_0':'#VALUE# месяцев назад','FD_MONTH_AGO_1':'#VALUE# месяц назад','FD_MONTH_AGO_10_20':'#VALUE# месяцев назад','FD_MONTH_AGO_MOD_1':'#VALUE# месяц назад','FD_MONTH_AGO_MOD_2_4':'#VALUE# месяца назад','FD_MONTH_AGO_MOD_OTHER':'#VALUE# месяцев назад','FD_MONTH_DIFF_0':'#VALUE# месяцев','FD_MONTH_DIFF_1':'#VALUE# месяц','FD_MONTH_DIFF_10_20':'#VALUE# месяцев','FD_MONTH_DIFF_MOD_1':'#VALUE# месяц','FD_MONTH_DIFF_MOD_2_4':'#VALUE# месяца','FD_MONTH_DIFF_MOD_OTHER':'#VALUE# месяцев','FD_YEARS_AGO_0':'#VALUE# лет назад','FD_YEARS_AGO_1':'#VALUE# год назад','FD_YEARS_AGO_10_20':'#VALUE# лет назад','FD_YEARS_AGO_MOD_1':'#VALUE# год назад','FD_YEARS_AGO_MOD_2_4':'#VALUE# года назад','FD_YEARS_AGO_MOD_OTHER':'#VALUE# лет назад','FD_YEARS_DIFF_0':'#VALUE# лет','FD_YEARS_DIFF_1':'#VALUE# год','FD_YEARS_DIFF_10_20':'#VALUE# лет','FD_YEARS_DIFF_MOD_1':'#VALUE# год','FD_YEARS_DIFF_MOD_2_4':'#VALUE# года','FD_YEARS_DIFF_MOD_OTHER':'#VALUE# лет','CAL_BUTTON':'Выбрать','CAL_TIME_SET':'Установить время','CAL_TIME':'Время'});</script>
+<script type="text/javascript">(window.BX||top.BX).message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','SERVER_TZ_OFFSET':'10800','SITE_ID':'s1','SITE_DIR':'/'});</script>
+
+
+<script type="text/javascript" src="/bitrix/cache/js/s1/jobs_ui/kernel_main/kernel_main.js?1501184891308670"></script>
+<script type="text/javascript" src="/bitrix/cache/js/s1/jobs_ui/kernel_twim.recaptchafree/kernel_twim.recaptchafree.js?15011822664685"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=ru"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_db.min.js?15008074758699"></script>
+<script type="text/javascript" src="/bitrix/js/main/core/core_frame_cache.min.js?150080747711191"></script>
+<script type="text/javascript" src="/bitrix/js/main/rsasecurity.min.js?150080751713967"></script>
+<script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core.js','/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/json/json2.min.js','/bitrix/js/main/core/core_ls.js','/bitrix/js/main/core/core_fx.js','/bitrix/js/main/session.js','/bitrix/js/main/core/core_window.js','/bitrix/js/main/core/core_popup.js','/bitrix/js/main/core/core_date.js','/bitrix/js/main/utils.js','/bitrix/js/main/core/core_timer.js','/bitrix/js/main/dd.js','/bitrix/js/main/core/core_dd.js','/bitrix/js/twim.recaptchafree/script.js']); </script>
+<script type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css','/bitrix/js/main/core/css/core_popup.css','/bitrix/js/main/core/css/core_date.css','/bitrix/components/bitrix/main.register/templates/.default/style.css','/bitrix/templates/jobs_ui/components/bitrix/menu/menu/style.css','/bitrix/templates/jobs_ui/template_styles.css']); </script>
+
+
+<script type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "3654c16516f4e82bb362211ea184abac"]); _ba.push(["host", "bitrix2-learn.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();</script>
+
+
+		<link href="/bitrix/templates/jobs_ui/themes/bootstrap.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="/bitrix/templates/jobs_ui/themes/jquery.min.js"></script>
+        <script type="text/javascript" src="/bitrix/templates/jobs_ui/themes/tether.min.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/jobs_ui/themes/bootstrap.js"></script>
+		<title>Регистрация нового пользователя</title>
+	</head>
+
+	<body>
+				<div id="bxdynamic_Lk7Vbr_start" style="display:none"></div>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav navbar-nav-fix">
+                                                                    <li class="nav-item active">
+                            <a class="nav-link" href="/">Главная</a>
+                        </li>
+                                                        </ul>
+                <ul class="navbar-nav">
+                                            <li class="nav-item">
+                            <a class="nav-link" href="/login">Авторизация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/registration">Регистрация</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+<div id="bxdynamic_Lk7Vbr_end" style="display:none"></div>
+<div id="bxdynamic_CKtZPX_start" style="display:none"></div>
+<script type="text/javascript">
+top.BX.defer(top.rsasec_form_bind)({'formid':'regform','key':{'M':'1SwsRxki615Nu9Che77H4h2EPw5hy1zHWhF4mk2rnPeNu66jXL6dXNlqMvAFcjaa2WYZjNjUfD4F0Lc+Oa2Q6GFUdc7JduCKjLRg4jD4n5dbFgEnmxT3LcTRhZvMZBQkVB7/6DO6z/S0Ww0jBHcQZ0LBDgHNA/0dbnosXTqxQb0=','E':'AQAB','chunk':'128'},'rsa_rand':'597a649adfea31.14183108','params':['REGISTER[PASSWORD]','REGISTER[CONFIRM_PASSWORD]']});
+</script>
+<div class="bx-auth-reg">
+
+
+<form method="post" action="/registration" name="regform" enctype="multipart/form-data">
+
+<table>
+	<thead>
+		<tr>
+			<td colspan="2"><b>Регистрация</b></td>
+		</tr>
+	</thead>
+	<tbody>
+			<tr>
+			<td>Логин (мин. 3 символа):<span class="starrequired">*</span></td>
+			<td><input size="30" type="text" name="REGISTER[LOGIN]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Пароль:<span class="starrequired">*</span></td>
+			<td><input size="30" type="password" name="REGISTER[PASSWORD]" value="" autocomplete="off" class="bx-auth-input" />
+				<span class="bx-auth-secure" id="bx_auth_secure" title="Перед отправкой формы пароль будет зашифрован в браузере. Это позволит избежать передачи пароля в открытом виде." style="display:none">
+					<div class="bx-auth-secure-icon"></div>
+				</span>
+				<noscript>
+				<span class="bx-auth-secure" title="Пароль будет отправлен в открытом виде. Включите JavaScript в браузере, чтобы зашифровать пароль перед отправкой.">
+					<div class="bx-auth-secure-icon bx-auth-secure-unlock"></div>
+				</span>
+				</noscript>
+<script type="text/javascript">
+document.getElementById('bx_auth_secure').style.display = 'inline-block';
+</script>
+</td>
+		</tr>
+				<tr>
+			<td>Подтверждение пароля:<span class="starrequired">*</span></td>
+			<td><input size="30" type="password" name="REGISTER[CONFIRM_PASSWORD]" value="" autocomplete="off" /></td>
+		</tr>
+				<tr>
+			<td>Адрес e-mail:<span class="starrequired">*</span></td>
+			<td><input size="30" type="text" name="REGISTER[EMAIL]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Имя:<span class="starrequired">*</span></td>
+			<td><input size="30" type="text" name="REGISTER[NAME]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Отчество:<span class="starrequired">*</span></td>
+			<td><input size="30" type="text" name="REGISTER[SECOND_NAME]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Фамилия:<span class="starrequired">*</span></td>
+			<td><input size="30" type="text" name="REGISTER[LAST_NAME]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Профессия:</td>
+			<td><input size="30" type="text" name="REGISTER[PERSONAL_PROFESSION]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Пол:</td>
+			<td><select name="REGISTER[PERSONAL_GENDER]">
+				<option value="">(неизвестно)</option>
+				<option value="M">Мужской</option>
+				<option value="F">Женский</option>
+			</select></td>
+		</tr>
+				<tr>
+			<td>Дата рождения:</td>
+			<td><small>DD.MM.YYYY</small><br /><input size="30" type="text" name="REGISTER[PERSONAL_BIRTHDAY]" value="" /><img src="/bitrix/js/main/core/images/calendar-icon.gif" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'REGISTER[PERSONAL_BIRTHDAY]', form: 'regform', bTime: false, currentTime: '1501204671', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0"/></td>
+		</tr>
+				<tr>
+			<td>Телефон:</td>
+			<td><input size="30" type="text" name="REGISTER[PERSONAL_PHONE]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Мобильный:</td>
+			<td><input size="30" type="text" name="REGISTER[PERSONAL_MOBILE]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Город:</td>
+			<td><input size="30" type="text" name="REGISTER[PERSONAL_CITY]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Область / край:</td>
+			<td><input size="30" type="text" name="REGISTER[PERSONAL_STATE]" value="" /></td>
+		</tr>
+				<tr>
+			<td>Страна:</td>
+			<td><select name="REGISTER[PERSONAL_COUNTRY]"><option value="16">Австралия</option>
+			<option value="17">Австрия</option>
+			<option value="2">Азербайджан</option>
+			<option value="18">Албания</option>
+			<option value="19">Алжир</option>
+			<option value="232">Американские Виргинские острова</option>
+			<option value="182">Ангилья</option>
+			<option value="20">Ангола</option>
+			<option value="146">Андорра</option>
+			<option value="183">Антарктида</option>
+			<option value="184">Антигуа и Барбуда</option>
+			<option value="210">Антильские острова</option>
+			<option value="21">Арабские Эмираты</option>
+			<option value="22">Аргентина</option>
+			<option value="3">Армения</option>
+			<option value="23">Аруба</option>
+			<option value="24">Афганистан</option>
+			<option value="25">Багамские острова</option>
+			<option value="26">Бангладеш</option>
+			<option value="27">Барбадос</option>
+			<option value="145">Бахрейн</option>
+			<option value="4">Беларусь</option>
+			<option value="147">Белиз</option>
+			<option value="28">Бельгия</option>
+			<option value="29">Бенин</option>
+			<option value="30">Бермудские острова</option>
+			<option value="31">Болгария</option>
+			<option value="32">Боливия</option>
+			<option value="33">Босния и Герцеговина</option>
+			<option value="149">Ботсвана</option>
+			<option value="34">Бразилия</option>
+			<option value="187">Британские Виргинские острова</option>
+			<option value="186">Британские территории в Индийском Океане</option>
+			<option value="35">Бруней</option>
+			<option value="150">Буркина Фасо</option>
+			<option value="151">Бурунди</option>
+			<option value="148">Бутан</option>
+			<option value="233">Вануату</option>
+			<option value="234">Ватикан</option>
+			<option value="36">Великобритания</option>
+			<option value="37">Венгрия</option>
+			<option value="38">Венесуэлла</option>
+			<option value="156">Восточный Тимор</option>
+			<option value="39">Вьетнам</option>
+			<option value="161">Габон</option>
+			<option value="40">Гаити</option>
+			<option value="41">Гамбия</option>
+			<option value="162">Гана</option>
+			<option value="43">Гваделупа</option>
+			<option value="44">Гватемала</option>
+			<option value="196">Гвиана</option>
+			<option value="45">Гвинея</option>
+			<option value="163">Гвинея-Биссау</option>
+			<option value="46">Германия</option>
+			<option value="47">Гибралтар</option>
+			<option value="42">Гондурас</option>
+			<option value="49">Гонконг</option>
+			<option value="50">Гренада</option>
+			<option value="51">Гренландия</option>
+			<option value="52">Греция</option>
+			<option value="5">Грузия</option>
+			<option value="53">Гуана</option>
+			<option value="54">Дания</option>
+			<option value="57">Демократическая республика Конго</option>
+			<option value="155">Джибути</option>
+			<option value="193">Доминика</option>
+			<option value="55">Доминиканская Республика</option>
+			<option value="56">Египет</option>
+			<option value="58">Замбия</option>
+			<option value="180">Западная Сахара</option>
+			<option value="59">Зимбабве</option>
+			<option value="60">Израиль</option>
+			<option value="61">Индия</option>
+			<option value="62">Индонезия</option>
+			<option value="63">Иордания</option>
+			<option value="64">Ирак</option>
+			<option value="65">Иран</option>
+			<option value="66">Ирландия</option>
+			<option value="67">Исландия</option>
+			<option value="68">Испания</option>
+			<option value="69">Италия</option>
+			<option value="70">Йемен</option>
+			<option value="189">Кабо-Верде</option>
+			<option value="6">Казахстан</option>
+			<option value="71">Каймановы острова</option>
+			<option value="78">Камбоджа</option>
+			<option value="72">Камерун</option>
+			<option value="73">Канада</option>
+			<option value="172">Катар</option>
+			<option value="74">Кения</option>
+			<option value="75">Кипр</option>
+			<option value="7">Киргизия</option>
+			<option value="200">Кирибати</option>
+			<option value="76">Китай</option>
+			<option value="191">Кокосовые острова</option>
+			<option value="77">Колумбия</option>
+			<option value="153">Коморос</option>
+			<option value="79">Конго</option>
+			<option value="164">Корея (Северная)</option>
+			<option value="80">Корея (Южная)</option>
+			<option value="81">Коста Рика</option>
+			<option value="154">Кот-Д`ивуар</option>
+			<option value="82">Куба</option>
+			<option value="83">Кувейт</option>
+			<option value="201">Лаос</option>
+			<option value="8">Латвия</option>
+			<option value="166">Лесото</option>
+			<option value="84">Либерия</option>
+			<option value="165">Ливан</option>
+			<option value="167">Ливия</option>
+			<option value="9">Литва</option>
+			<option value="85">Лихтенштейн</option>
+			<option value="86">Люксембург</option>
+			<option value="205">Маврикий</option>
+			<option value="87">Мавритания</option>
+			<option value="88">Мадагаскар</option>
+			<option value="206">Майотта</option>
+			<option value="202">Макао</option>
+			<option value="89">Македония</option>
+			<option value="203">Малави</option>
+			<option value="90">Малайзия</option>
+			<option value="91">Мали</option>
+			<option value="168">Мальдивы</option>
+			<option value="92">Мальта</option>
+			<option value="204">Мартиника</option>
+			<option value="169">Маршалские острова</option>
+			<option value="93">Мексика</option>
+			<option value="207">Микронезия</option>
+			<option value="94">Мозамбик</option>
+			<option value="10">Молдавия</option>
+			<option value="95">Монако</option>
+			<option value="96">Монголия</option>
+			<option value="208">Монтсеррат</option>
+			<option value="97">Морокко</option>
+			<option value="188">Мьянма</option>
+			<option value="98">Намибия</option>
+			<option value="209">Науру</option>
+			<option value="99">Непал</option>
+			<option value="170">Нигер</option>
+			<option value="100">Нигерия</option>
+			<option value="48">Нидерланды</option>
+			<option value="102">Никарагуа</option>
+			<option value="212">Ниуэ</option>
+			<option value="103">Новая Зеландия</option>
+			<option value="211">Новая Каледония</option>
+			<option value="104">Норвегия</option>
+			<option value="171">Оман</option>
+			<option value="185">Остров Буве</option>
+			<option value="213">Остров Норфолк</option>
+			<option value="216">Остров Питкэрн</option>
+			<option value="190">Остров Рождества</option>
+			<option value="218">Остров Св.Елены</option>
+			<option value="192">Острова Кука</option>
+			<option value="221">Острова Сен-Пьер и Микелон</option>
+			<option value="219">Острова Сент-Киттс и Невис</option>
+			<option value="230">Острова Тёркс и Кайкос</option>
+			<option value="235">Острова Уоллис и Футуна</option>
+			<option value="199">Острова Херд и Макдоналд</option>
+			<option value="226">Острова Шпицберген и Ян-Майен</option>
+			<option value="105">Пакистан</option>
+			<option value="214">Палау</option>
+			<option value="215">Палестина</option>
+			<option value="106">Панама</option>
+			<option value="107">Папуа Новая Гвинея</option>
+			<option value="108">Парагвай</option>
+			<option value="109">Перу</option>
+			<option value="110">Польша</option>
+			<option value="111">Португалия</option>
+			<option value="112">Пуэрто Рико</option>
+			<option value="217">Реюньон</option>
+			<option value="1">Россия</option>
+			<option value="173">Руанда</option>
+			<option value="113">Румыния</option>
+			<option value="122">США</option>
+			<option value="174">Самоа</option>
+			<option value="223">Сан-Марино</option>
+			<option value="220">Санта-Лючия</option>
+			<option value="114">Саудовская Аравия</option>
+			<option value="178">Свазиленд</option>
+			<option value="175">Сейшеллы</option>
+			<option value="115">Сенегал</option>
+			<option value="222">Сент-Винсент и Гренадины</option>
+			<option value="142">Сербия</option>
+			<option value="116">Сингапур</option>
+			<option value="117">Сирия</option>
+			<option value="118">Словакия</option>
+			<option value="119">Словения</option>
+			<option value="224">Соломоновы острова</option>
+			<option value="120">Сомали</option>
+			<option value="121">Судан</option>
+			<option value="177">Суринам</option>
+			<option value="176">Сьерра-Леоне</option>
+			<option value="11">Таджикистан</option>
+			<option value="124">Таиланд</option>
+			<option value="123">Тайвань</option>
+			<option value="179">Танзания</option>
+			<option value="227">Того</option>
+			<option value="228">Токелау</option>
+			<option value="229">Тонга</option>
+			<option value="125">Тринидад и Тобаго</option>
+			<option value="231">Тувалу</option>
+			<option value="126">Тунис</option>
+			<option value="12">Туркменистан</option>
+			<option value="127">Турция</option>
+			<option value="128">Уганда</option>
+			<option value="13">Узбекистан</option>
+			<option value="14">Украина</option>
+			<option value="129">Уругвай</option>
+			<option value="195">Фарерские острова</option>
+			<option value="160">Фижи</option>
+			<option value="130">Филиппины</option>
+			<option value="131">Финляндия</option>
+			<option value="194">Фолклендские острова</option>
+			<option value="132">Франция</option>
+			<option value="197">Французская Полинезия</option>
+			<option value="181">Хорватия</option>
+			<option value="152">Центральноафриканская Республика</option>
+			<option value="133">Чад</option>
+			<option value="236">Черногория</option>
+			<option value="134">Чехия</option>
+			<option value="135">Чили</option>
+			<option value="136">Швейцария</option>
+			<option value="137">Швеция</option>
+			<option value="138">Шри-Ланка</option>
+			<option value="139">Эквадор</option>
+			<option value="158">Экваториальная Гвинея</option>
+			<option value="157">Эль Сальвадор</option>
+			<option value="159">Эритрея</option>
+			<option value="15">Эстония</option>
+			<option value="140">Эфиопия</option>
+			<option value="141">ЮАР</option>
+			<option value="225">Южная Георгия и Южные Сандвичевы острова</option>
+			<option value="198">Южные Французские территории</option>
+			<option value="143">Ямайка</option>
+			<option value="144">Япония</option>
+			</select></td>
+		</tr>
+			<tr>
+			<td colspan="2"><b>Защита от автоматической регистрации</b></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<input type="hidden" name="captcha_sid" value="0f8071cbf770a188f6667aa6cb0516ff" />
+				<img src="/bitrix/tools/captcha.php?captcha_sid=0f8071cbf770a188f6667aa6cb0516ff" width="180" height="40" alt="CAPTCHA" />
+			</td>
+		</tr>
+		<tr>
+			<td>Введите слово на картинке:<span class="starrequired">*</span></td>
+			<td><input type="text" name="captcha_word" maxlength="50" value="" /></td>
+		</tr>
+		</tbody>
+	<tfoot>
+		<tr>
+			<td></td>
+			<td><input type="submit" name="register_submit_button" value="Регистрация" /></td>
+		</tr>
+	</tfoot>
+</table>
+<p>Пароль должен быть не менее 6 символов длиной.</p>
+<p><span class="starrequired">*</span>Поля, обязательные для заполнения.</p>
+
+</form>
+</div><div id="bxdynamic_CKtZPX_end" style="display:none"></div>		</body>
+</html><!--88e956cbb0d4a22260ca1d210d48f935-->
