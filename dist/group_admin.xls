@@ -1,0 +1,12 @@
+
+		<html>
+		<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style>
+			td {mso-number-format:\@;}
+			.number0 {mso-number-format:0;}
+			.number2 {mso-number-format:Fixed;}
+		</style>
+		</head>
+		<body><table border="1"><tr><td>ID</td><td>Дата изменения</td><td>Активность</td><td>Сортировка</td><td>Название</td></tr><tr><td align="right" class="number0">1</td><td>23.07.2017 14:57:10</td><td>Да</td><td align="right" class="number0">1</td><td>Администраторы</td></tr><tr><td align="right" class="number0">2</td><td>23.07.2017 14:57:10</td><td>Да</td><td align="right" class="number0">2</td><td>Все пользователи (в том числе неавторизованные)</td></tr><tr><td align="right" class="number0">3</td><td>23.07.2017 14:57:10</td><td>Да</td><td align="right" class="number0">3</td><td>Пользователи, имеющие право голосовать за рейтинг</td></tr><tr><td align="right" class="number0">4</td><td>23.07.2017 14:57:10</td><td>Да</td><td align="right" class="number0">4</td><td>Пользователи имеющие право голосовать за авторитет</td></tr><tr><td align="right" class="number0">5</td><td>26.07.2017 17:42:06</td><td>Да</td><td align="right" class="number0">5</td><td>Работодатель</td></tr></table></body></html>
